@@ -4,9 +4,12 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  layout: {},
-  routes: [
-    { path: '/', component: '@/pages/index' },
-  ],
+  antd: {},
+  layout: {
+    name: 'DDI Leaf',
+  },
+  routes: [{ path: '/context', component: '@/pages/index' }],
   fastRefresh: {},
+  // 使用hash路由
+  history: { type: 'hash' },
 });
